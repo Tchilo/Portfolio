@@ -18,10 +18,6 @@
   padding: 10px 20px;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .main {
   background-image: url("header.png");
   background-repeat: no-repeat;
@@ -31,6 +27,7 @@
   align-items: center;
   height: 100vh;
   width: 100%;
+
 }
 
 .introduction-text {
