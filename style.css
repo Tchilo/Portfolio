@@ -231,7 +231,7 @@ a {
   align-items: center;
 }
 
-.about-me-btns {
+.about-me-btns li {
   list-style: none;
   display: flex;
   justify-content: center;
