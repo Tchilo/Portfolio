@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: red solid 1px;
 }
 
 .welcome {
@@ -267,4 +266,8 @@ a {
   font-size: 24px;
   line-height: 32px;
   text-align: center;
+}
+
+.green-btn:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
