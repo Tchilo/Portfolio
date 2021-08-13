@@ -15,6 +15,11 @@ a {
   color: #505f79;
 }
 
+.font-f {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -42,11 +47,9 @@ a {
 }
 
 .common {
-  font-style: normal;
   font-weight: bold;
   line-height: 52px;
   text-align: center;
-  font-family: Inter, sans-serif;
   font-size: 40px;
 }
 
@@ -55,9 +58,7 @@ a {
 }
 
 .introduction-text-2 {
-  font-family: Inter, sans-serif;
   width: 320px;
-  font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
@@ -140,8 +141,6 @@ a {
 }
 
 .bottom-card h3 {
-  font-style: normal;
-  font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -153,8 +152,6 @@ a {
   border-radius: 4px;
   padding: 12px;
   border: none;
-  font-family: Inter, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -170,8 +167,6 @@ a {
 
 .buttons {
   padding: 6px 10px;
-  font-family: Inter, sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -212,9 +207,7 @@ a {
 }
 
 .text-for-about-me {
-  font-family: Inter, sans-serif;
   width: 327px;
-  font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
@@ -263,8 +256,6 @@ a {
 }
 
 .card-heading {
-  font-style: normal;
-  font-family: Inter, sans-serif;
   color: #344563;
   font-weight: 600px;
   font-size: 24px;
