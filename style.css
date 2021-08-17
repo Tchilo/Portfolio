@@ -267,3 +267,52 @@ a {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   cursor: pointer;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(img/Frame.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  align-items: center;
+}
+
+.contact-header {
+  width: 321px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  width: 327px;
+  height: 48px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  padding: 15px 16px;
+  margin-bottom: 24px;
+}
+
+.text-area {
+  height: 114px;
+  color: #091e42;
+}
+
+label {
+  display: none;
+}
+
+.footer-email {
+  margin-bottom: 17.04px;
+}
