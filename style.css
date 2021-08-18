@@ -10,6 +10,10 @@
   top: 10px;
 }
 
+.nav-bar-list {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: #505f79;
@@ -37,6 +41,8 @@ a {
   align-items: center;
   height: 100vh;
   width: 100%;
+  justify-content: center;
+  padding: 24px;
 }
 
 .introduction-text {
@@ -71,7 +77,7 @@ a {
 .social-icons {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 64px;
 }
 
@@ -124,8 +130,6 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  margin-left: 26px;
-  margin-right: 22px;
 }
 
 .bottom-card {
@@ -315,4 +319,137 @@ label {
 
 .footer-email {
   margin-bottom: 17.04px;
+}
+
+@media screen and (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+
+  .nav-bar-list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-bar-list li {
+    margin-top: 5px;
+    padding: 0 16px;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgba(52, 69, 99, 1);
+  }
+
+  .main-content {
+    background-image: url("img/Header-llustration-desktop@2x.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .introduction-text {
+    margin-top: 15px;
+    margin-bottom: 24px;
+    width: 40%;
+    font-size: 30px;
+  }
+
+  .introduction-text-2 {
+    width: 40%;
+    margin: 0 50px;
+  }
+
+  .down-arrow {
+    margin-top: 84px;
+  }
+
+  .green-indicator {
+    display: none;
+  }
+
+  .recent-works h2 {
+    width: 447px;
+    height: 48px;
+    margin-top: 102px;
+  }
+
+  .card-list {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+  }
+
+  .about-me-text {
+    background-image: url(img/illustration-about\ me-1-desktop-about-left.svg), url(img/illustration-about\ me-1-desktop-about-right.png);
+    background-position: center left, top right;
+    width: 100%;
+    background-size: 11%;
+    margin-top: 120px;
+    margin-bottom: 52px;
+  }
+
+  .text-for-about-me {
+    width: 768px;
+    height: 92px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+
+  .cards-margin {
+    margin-bottom: -164px;
+  }
+
+  .footer {
+    background-image:
+      url("img/footing-bg-1-desktop.svg"),
+      url("img/footing-bg-2-desktop.svg"),
+      url("img/footing-bg-3-desktop.svg");
+    background-position: bottom left, 13rem bottom, bottom right;
+    background-size: 10%;
+  }
+
+  .form {
+    display: flex;
+    width: 85%;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 225px;
+    margin-top: 0;
+    justify-content: space-around;
+  }
+
+  .input {
+    width: 680px;
+  }
+
+  .contact-header {
+    width: 463px;
+    height: 256px;
+    line-height: 52px;
+  }
+
+  .footer-line {
+    border-top: 1px solid #dfe1e6;
+  }
+
+  .social-icons li {
+    padding-top: 24px;
+  }
+
+  .footer-icons a {
+    font-size: 23px;
+  }
+
+  .footer-icons {
+    margin-bottom: 1px;
+  }
+
+  form {
+    width: 60%;
+  }
+
+  .form form {
+    display: block;
+  }
 }
