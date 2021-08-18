@@ -350,12 +350,12 @@ label {
   .introduction-text {
     margin-top: 15px;
     margin-bottom: 24px;
-    padding: 0 50px;
-    width: 920px;
+    width: 40%;
+    font-size: 30px;
   }
 
   .introduction-text-2 {
-    width: 769px;
+    width: 40%;
     margin: 0 50px;
   }
 
@@ -411,18 +411,20 @@ label {
 
   .form {
     display: flex;
+    width: 85%;
     flex-direction: row;
     gap: 24px;
     margin-bottom: 225px;
     margin-top: 0;
+    justify-content: space-around;
   }
 
   .input {
-    width: 684px;
+    width: 680px;
   }
 
   .contact-header {
-    width: 718px;
+    width: 463px;
     height: 256px;
     line-height: 52px;
   }
@@ -441,5 +443,13 @@ label {
 
   .footer-icons {
     margin-bottom: 1px;
+  }
+
+  form {
+    width: 60%;
+  }
+
+  .form form {
+    display: block;
   }
 }
