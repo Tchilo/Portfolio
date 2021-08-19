@@ -50,7 +50,7 @@ a {
   font-size: 40px;
   margin-top: 74px;
   margin-bottom: 58px;
-  transition: font-size, 500ms,1000ms;
+  transition: font-size, 500ms, 1000ms;
 }
 
 .introduction-text.head-trans:hover {
