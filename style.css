@@ -457,4 +457,26 @@ label {
   .form form {
     display: block;
   }
+
+  .about-me-h2:hover {
+    animation: bounce 2s ease-out;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.5);
+    }
+
+    75% {
+      transform: scale(2);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
 }
