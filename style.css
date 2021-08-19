@@ -53,7 +53,7 @@ a {
   transition: font-size, 500ms,1000ms;
 }
 
-.introduction-text:hover {
+.introduction-text.head-trans:hover {
   font-size: 60px;
 }
 
