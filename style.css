@@ -50,6 +50,11 @@ a {
   font-size: 40px;
   margin-top: 74px;
   margin-bottom: 58px;
+  transition: font-size, 500ms,1000ms;
+}
+
+.introduction-text:hover {
+  font-size: 60px;
 }
 
 .common {
