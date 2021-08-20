@@ -7,6 +7,7 @@
 
 
 ![screenshot](./header-toolbar.png)
+![screenshot](./desktop.png)
 
 Additional description about the project and its features.
 
@@ -28,9 +29,9 @@ in visual studio code you can click the go live button to view it live in the br
 
 ## Author
 
-👤 **Taro**
+👤 **Taro Chilongoshi**
 
-- GitHub: [@githubhandle](https://github.com/Tchilo)
+- GitHub: [@Tchilo](https://github.com/Tchilo)
 
 
 
@@ -44,11 +45,7 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
