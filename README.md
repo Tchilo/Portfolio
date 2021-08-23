@@ -9,7 +9,7 @@
 ![screenshot](./header-toolbar.png)
 ![screenshot](./desktop.png)
 
-##Live link
+## Live link
 [Click here to see project](https://tchilo.github.io/Portfolio/)
 
 Additional description about the project and its features.
