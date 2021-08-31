@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .welcome {
   width: 90px;
   height: 28px;
@@ -12,6 +16,18 @@
 
 .nav-bar-list {
   display: none;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #3c3a39;
+}
+
+.d-block {
+  display: block;
 }
 
 a {
@@ -336,6 +352,9 @@ label {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    background: transparent;
+    position: static;
   }
 
   .nav-bar-list li {
