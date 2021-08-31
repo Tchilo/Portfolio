@@ -8,6 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 
+header {
+  position: sticky;
+  top: 0;
+}
+
 .welcome {
   width: 90px;
   height: 28px;
