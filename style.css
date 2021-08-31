@@ -16,18 +16,35 @@ html {
 
 .nav-bar-list {
   display: none;
-  flex-direction: column;
+  gap: 40px;
   height: 100%;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #3c3a39;
+  background-color: #fff;
+  color: #3a4a42;
 }
 
 .d-block {
   display: block;
+  padding-top: 10%;
+}
+
+.d-block li {
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 10%;
+  list-style: none;
+}
+
+.d-block .mobile {
+  position: fixed;
+  right: 5%;
+  top: -2%;
+  font-size: 1.8rem;
+  color: gray;
 }
 
 a {
