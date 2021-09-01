@@ -469,6 +469,10 @@ label {
   color: rgba(103, 121, 142, 1);
 }
 
+.popup-modal {
+  list-style: none;
+}
+
 @media screen and (min-width: 992px) {
   .mobile {
     display: none;
