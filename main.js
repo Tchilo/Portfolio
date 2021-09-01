@@ -131,7 +131,6 @@ projectCards.forEach((el) => {
       const pop = document.querySelector('.bg-popup');
       pop.style.display = 'block';
   const popupCloseButton = document.querySelector('.popup-close-btn');
-
       popupCloseButton.addEventListener('click', () => {
         const pop = document.querySelector('.bg-popup');
         pop.style.display = 'none';
