@@ -3,8 +3,9 @@ const closeMenuButton = document.querySelector('.fa-times');
 const mobileMenu = document.querySelector('.d-menu-li');
 const links = document.querySelectorAll('.nav-bar-list li a');
 const popupData = document.querySelector('.popup-modal');
-const projectButtons = document.querySelectorAll('.card-list button');
-
+function grab(e) {
+  return document.getElementById(e);
+}
 // Mobile menu code
 
 openMenuButton.addEventListener('click', () => {
@@ -20,13 +21,6 @@ window.addEventListener('resize', () => {
   if (window.innerWidth > 767.98) {
     openMenuButton.classList.remove('d-block');
   }
-});
-
-projectButtons.forEach((el) => {
-  el.addEventListener('click', () => {
-    const pop = document.querySelector('.bg-popup');
-    pop.style.display = 'block';
-  });
 });
 
 // Popup data array
@@ -45,12 +39,59 @@ const mobilePopup = [
   },
 ];
 
+// Project cards data
+
+const projectCards = [
+  {
+    id: 'card1',
+    image: '',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
+    button: 'See Project',
+  },
+  {
+    id: 'card2',
+    image: '',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
+    button: 'See Project',
+  },
+  {
+    id: 'card3',
+    image: '',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
+    button: 'See Project',
+  },
+  {
+    id: 'card4',
+    image: '',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
+    button: 'See Project',
+  },
+  {
+    id: 'card5',
+    image: '',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
+    button: 'See Project',
+  },
+  {
+    id: 'card6',
+    image: '',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
+    button: 'See Project',
+  },
+];
+
 // popup data template
 
 mobilePopup.forEach((el) => {
   let languages = '';
   el.languages.forEach((lang) => {
-    languages += `<li class="buttons font-f">${lang}</li>`
+    languages += `<li class="buttons font-f">${lang}</li>`;
   });
 
   popupData.innerHTML = `
@@ -74,4 +115,41 @@ mobilePopup.forEach((el) => {
             </div>
           </div>
         </li>`;
+});
+
+// project card code
+
+projectCards.forEach((el) => {
+  let languages = '';
+  el.technologies.forEach((lang) => {
+    languages += `<li class="buttons font-f">${lang}</li>`;
+  });
+  const projectButtons = document.querySelectorAll('.popOpen');
+
+  projectButtons.forEach((el) => {
+    el.addEventListener('click', () => {
+      const pop = document.querySelector('.bg-popup');
+      pop.style.display = 'block';
+  const popupCloseButton = document.querySelector('.popup-close-btn');
+
+      popupCloseButton.addEventListener('click', () => {
+        const pop = document.querySelector('.bg-popup');
+        pop.style.display = 'none';
+      });
+    });
+  });
+
+  const template = document.createElement('template');
+
+  template.innerHTML = `<li class="container">
+          <div class="bottom-card">
+            <h3 class="card-heading font-f">${el.name}</h3>
+            <ul class="btns">
+              ${languages}
+            </ul>
+            <button type="button" class="green-btn font-f popOpen">${el.button}</button>
+          </div>
+        </li>`;
+
+  grab('cards').appendChild(template.content.firstChild);
 });
