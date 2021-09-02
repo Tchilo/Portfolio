@@ -150,21 +150,35 @@ projectCards.forEach((el, i) => {
   grab('cards').appendChild(far);
 });
 
-// FORM VALIDATION CODE
+// FORM ELEMENT SELECTION
 
 const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
 
 const errorMessage = document.querySelector('.error-message');
 const form = document.forms['contact-form'];
 const mail = form.email;
+const messageInput = form.comment;
+const nameInput = form.fullName;
 const formElts = form.querySelectorAll('input, textarea');
+
+// SAVE TO LOCAL STORAGE
+
+const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
+const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
 
 formElts.forEach((fe) => {
   fe.addEventListener('input', () => {
     errorMessage.style.display = 'none';
+    const objectForLocalStorage = {
+      name: nameInput.value,
+      email: mail.value,
+      message: messageInput.value,
+    };
+    saveToLocalStorage('formData', objectForLocalStorage);
   });
 });
 
+// EMAIL VALIDATION
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const email = mail.value;
