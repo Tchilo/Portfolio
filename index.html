@@ -154,7 +154,7 @@
     <div class="form form-background">
       <h2 class="introduction-text common font-f contact-header">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
 
-      <form action="https://formspree.io/f/xzbygvjd" method="POST" id="form">
+      <form action="https://formspree.io/f/xzbygvjd" name="contact-form" method="POST" id="form">
         <label for="fname">Full name:</label>
         <input id="fname" type="text" maxlength="30" name="full-name" placeholder="Full name" required class="input">
 
@@ -163,8 +163,9 @@
 
         <label for="textarea">Message:</label>
         <textarea id="textarea" name="comment" maxlength="500" cols="30" rows="10" placeholder="Enter text here" required class="input text-area"></textarea>
+        <div class="error-message"><p><b>The email has to be in lower case</b></p></div>
         <div>
-          <button class="green-btn font-f" type="submit">Get in touch</button>
+          <button class="green-btn font-f" id="submit-btn" type="submit">Get in touch</button>
         </div>
 
       </form>
