@@ -160,6 +160,13 @@ const errorMessage = document.querySelector('.error-message');
 const form = document.forms['contact-form'];
 const mail = form.email;
 const submitBtn = document.getElementById('submit-btn');
+const formElts = form.querySelectorAll('input, textarea');
+
+formElts.forEach(fe => {
+  fe.addEventListener('input', (e) => {
+    errorMessage.style.display = 'none';
+  })
+});
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
