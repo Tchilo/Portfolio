@@ -473,6 +473,16 @@ label {
   list-style: none;
 }
 
+.error-message {
+  width: auto;
+  color: red;
+  height: auto;
+  background-color: #f1a0a9;
+  border-radius: 5px;
+  padding: 5px 15px;
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
   .mobile {
     display: none;

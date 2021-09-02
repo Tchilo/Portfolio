@@ -149,3 +149,25 @@ projectCards.forEach((el, i) => {
   far.childNodes[1].appendChild(btn);
   grab('cards').appendChild(far);
 });
+
+// FORM VALIDATION CODE
+
+function isLowerCase(str) {
+  return /[a-z]/.test(str) && !/[A-Z]/.test(str);
+}
+
+const errorMessage = document.querySelector('.error-message');
+const form = document.forms['contact-form'];
+const mail = form.email;
+const submitBtn = document.getElementById('submit-btn');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = mail.value;
+  if (!isLowerCase(email)) {
+    errorMessage.style.display = 'block';
+  } else {
+    errorMessage.style.display = 'none';
+    form.submit();
+  }
+});
