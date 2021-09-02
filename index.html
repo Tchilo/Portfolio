@@ -16,6 +16,12 @@
 
     gtag('config', 'G-M4MY231LDR');
   </script>
+
+  <style>
+    .hide {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -60,79 +66,7 @@
         <h2 class="common font-f">My Recent Works</h2>
         <img class="green-indicator" src="img/Indicator.png" alt="">
       </div>
-      <ul class="card-list">
-        <li class="container">
-          <div class="bottom-card">
-            <h3 class="card-heading font-f">Multi-Post Stories <br> Gain+Glory</h3>
-            <ul class="btns">
-              <li class="buttons font-f">Ruby on rails</li>
-              <li class="buttons font-f">CSS</li>
-              <li class="buttons font-f">JavaScript</li>
-              <li class="buttons font-f">html</li>
-            </ul>
-            <button type="button" class="green-btn font-f">See Project</button>
-          </div>
-        </li>
-        <li class="container">
-          <div class="bottom-card">
-            <h3 class="card-heading font-f">Multi-Post Stories <br> Gain+Glory</h3>
-            <ul class="btns">
-              <li class="buttons font-f">Ruby on rails</li>
-              <li class="buttons font-f">CSS</li>
-              <li class="buttons font-f">JavaScript</li>
-              <li class="buttons font-f">html</li>
-            </ul>
-            <button type="button" class="green-btn font-f">See Project</button>
-          </div>
-        </li>
-        <li class="container">
-          <div class="bottom-card">
-            <h3 class="card-heading font-f">Multi-Post Stories <br> Gain+Glory</h3>
-            <ul class="btns">
-              <li class="buttons font-f">Ruby on rails</li>
-              <li class="buttons font-f">CSS</li>
-              <li class="buttons font-f">JavaScript</li>
-              <li class="buttons font-f">html</li>
-            </ul>
-            <button type="button" class="green-btn font-f">See Project</button>
-          </div>
-        </li>
-        <li class="container">
-          <div class="bottom-card">
-            <h3 class="card-heading font-f">Multi-Post Stories <br> Gain+Glory</h3>
-            <ul class="btns">
-              <li class="buttons font-f">Ruby on rails</li>
-              <li class="buttons font-f">CSS</li>
-              <li class="buttons font-f">JavaScript</li>
-              <li class="buttons font-f">html</li>
-            </ul>
-            <button type="button" class="green-btn font-f">See Project</button>
-          </div>
-        </li>
-        <li class="container">
-          <div class="bottom-card">
-            <h3 class="card-heading font-f">Multi-Post Stories <br> Gain+Glory</h3>
-            <ul class="btns">
-              <li class="buttons font-f">Ruby on rails</li>
-              <li class="buttons font-f">CSS</li>
-              <li class="buttons font-f">JavaScript</li>
-              <li class="buttons font-f">html</li>
-            </ul>
-            <button type="button" class="green-btn font-f">See Project</button>
-          </div>
-        </li>
-        <li class="container">
-          <div class="bottom-card">
-            <h3 class="card-heading font-f">Multi-Post Stories <br> Gain+Glory</h3>
-            <ul class="btns">
-              <li class="buttons font-f">Ruby on rails</li>
-              <li class="buttons font-f">CSS</li>
-              <li class="buttons font-f">JavaScript</li>
-              <li class="buttons font-f">html</li>
-            </ul>
-            <button type="button" class="green-btn font-f">See Project</button>
-          </div>
-        </li>
+      <ul class="card-list" id="cards">
       </ul>
     </section>
     <section class="post-stories cards-margin" id="about-me">
@@ -194,6 +128,26 @@
           </div>
         </li>
       </ul>
+      <!-- popup -->
+      <div class="popup-modal bg-popup hide">
+        <div class="popup-data">
+              <i class="fa fa-times popup-close-btn" aria-hidden="true"></i>
+              <div class="cont">
+                <img class="img-block" src="#" alt="#">
+              </div>
+              <div class="bottom-card-popup">
+                <h3 class="card-heading-popup font-f">Keeping track of hundreds of
+                  components</h3>
+                <ul class="btns" id="foo">
+                </ul>
+                <p class="popup-text font-f"></p>
+                <div class="popup-btn-container">
+                  <a href="" class="popup-btn font-f see-live">See Live<span><i class="fa fa-external-link"></i></span></a>
+                  <a href="" class="popup-btn font-f see-source">See Source<span><i class="fa fa-github"></i></span></a>
+                </div>
+              </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer" id="contact-me">
@@ -226,7 +180,7 @@
     </ul>
   </div>
 
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
