@@ -165,9 +165,8 @@ const formElts = form.querySelectorAll('input, textarea');
 const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
 const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
 
-let formData = getFromLocalStorage('formData');
-if(formData !== null)
-{
+const formData = getFromLocalStorage('formData');
+if (formData !== null) {
   nameInput.value = formData.name;
   mail.value = formData.email;
   messageInput.value = formData.message;
