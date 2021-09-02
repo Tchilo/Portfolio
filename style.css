@@ -389,7 +389,7 @@ label {
 }
 
 .popup-data {
-  width: 92%;
+  width: 95%;
   margin: 20px auto;
   background-color: #fff;
   position: relative;
@@ -609,7 +609,13 @@ label {
   }
 
   .popup-data {
-    width: 80%;
+    height: auto;
+    width: 744px;
+  }
+
+  .img-block {
+    height: auto;
+    width: 93%;
   }
 
   .card-heading-popup {
@@ -618,20 +624,31 @@ label {
     line-height: 44px;
     letter-spacing: 0;
     text-align: left;
+    height: 82px;
   }
 
   .popup-btn-container {
     position: absolute;
-    left: 70%;
-    bottom: 24%;
+    left: 66%;
+    top: 67%;
   }
 
   .popup-close-btn {
     margin-bottom: 14px;
   }
 
+  .popup-data i {
+    font-size: 15px;
+  }
+
   .btns {
     margin: 0;
+  }
+
+  .cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .about-me-h2:hover {

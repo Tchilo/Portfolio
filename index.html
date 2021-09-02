@@ -16,6 +16,12 @@
 
     gtag('config', 'G-M4MY231LDR');
   </script>
+
+  <style>
+    .hide {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -123,8 +129,25 @@
         </li>
       </ul>
       <!-- popup -->
-      <ul class="popup-modal">
-      </ul>
+      <div class="popup-modal bg-popup hide">
+        <div class="popup-data">
+              <i class="fa fa-times popup-close-btn" aria-hidden="true"></i>
+              <div class="cont">
+                <img class="img-block" alt="#">
+              </div>
+              <div class="bottom-card-popup">
+                <h3 class="card-heading-popup font-f">Keeping track of hundreds of
+                  components</h3>
+                <ul class="btns" id="foo">
+                </ul>
+                <p class="popup-text font-f"></p>
+                <div class="popup-btn-container">
+                  <a href="" class="popup-btn font-f see-live">See Live<span><i class="fa fa-external-link"></i></span></a>
+                  <a href="" class="popup-btn font-f see-source">See Source<span><i class="fa fa-github"></i></span></a>
+                </div>
+              </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer" id="contact-me">
