@@ -81,7 +81,7 @@ const projectCards = [
   },
 ];
 
-function fooBar(position) {
+function popupCode(position) {
   const el = projectCards[position];
 
   const pop = document.querySelector('.bg-popup');
@@ -129,15 +129,23 @@ projectCards.forEach((el, i) => {
 
   const template = document.createElement('template');
 
+  const btn = document.createElement('button');
+  btn.className = 'green-btn font-f popOpen';
+  btn.innerText = el.button;
+  btn.addEventListener('click', () => {
+    popupCode(i);
+  });
+
   template.innerHTML = `<li class="container">
       <div class="bottom-card">
         <h3 class="card-heading font-f">${el.name}</h3>
         <ul class="btns">
           ${languages}
         </ul>
-        <button type="button" class="green-btn font-f popOpen" onclick="fooBar(${i})">${el.button}</button>
       </div>
     </li>`;
 
-  grab('cards').appendChild(template.content.firstChild);
+  const far = template.content.firstChild;
+  far.childNodes[1].appendChild(btn);
+  grab('cards').appendChild(far);
 });
