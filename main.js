@@ -152,9 +152,7 @@ projectCards.forEach((el, i) => {
 
 // FORM VALIDATION CODE
 
-function isLowerCase(str) {
-  return /[a-z]/.test(str) && !/[A-Z]/.test(str);
-}
+const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
 
 const errorMessage = document.querySelector('.error-message');
 const form = document.forms['contact-form'];
