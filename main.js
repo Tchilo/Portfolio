@@ -153,7 +153,6 @@ projectCards.forEach((el, i) => {
 // FORM ELEMENT SELECTION
 
 const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
-
 const errorMessage = document.querySelector('.error-message');
 const form = document.forms['contact-form'];
 const mail = form.email;
@@ -166,6 +165,13 @@ const formElts = form.querySelectorAll('input, textarea');
 const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
 const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
 
+let formData = getFromLocalStorage('formData');
+if(formData !== null)
+{
+  nameInput.value = formData.name;
+  mail.value = formData.email;
+  messageInput.value = formData.message;
+}
 formElts.forEach((fe) => {
   fe.addEventListener('input', () => {
     errorMessage.style.display = 'none';
