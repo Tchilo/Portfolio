@@ -8,7 +8,7 @@ function grab(e) {
 // Mobile menu code
 
 openMenuButton.addEventListener('click', () => {
-  mobileMenu.classList.add('d-block');
+  mobileMenu.classList.contains('d-block');
 });
 
 closeMenuButton.addEventListener('click', () => {
@@ -18,7 +18,7 @@ closeMenuButton.addEventListener('click', () => {
 links.forEach((item) => item.addEventListener('click', () => mobileMenu.classList.remove('d-block')));
 window.addEventListener('resize', () => {
   if (window.innerWidth > 767.98) {
-    openMenuButton.classList.remove('d-block');
+    openMenuButton.classList.remove('block');
   }
 });
 
@@ -27,7 +27,7 @@ window.addEventListener('resize', () => {
 const projectCards = [
   {
     id: 'card1',
-    image: 'img/modal-popup.png',
+    image: '//img/modal-popup.png',
     name: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
@@ -36,7 +36,7 @@ const projectCards = [
   },
   {
     id: 'card2',
-    image: 'img/modal-popup.png',
+    image: '//img/modal-popup.png',
     name: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
@@ -45,7 +45,7 @@ const projectCards = [
   },
   {
     id: 'card3',
-    image: 'img/modal-popup.png',
+    image: '//img/modal-popup.png',
     name: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
@@ -63,7 +63,7 @@ const projectCards = [
   },
   {
     id: 'card5',
-    image: 'img/modal-popup.png',
+    image: '//img/modal-popup.png',
     name: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
@@ -152,7 +152,7 @@ projectCards.forEach((el, i) => {
 
 // FORM ELEMENT SELECTION
 
-const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
+const isLowerCase = (str) = > /[a-z]/.test(str) && !/[A-Z]/.test(str);
 const errorMessage = document.querySelector('.error-message');
 const form = document.forms['contact-form'];
 const mail = form.email;
@@ -185,7 +185,6 @@ formElts.forEach((fe) => {
 
 // EMAIL VALIDATION
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
   const email = mail.value;
   if (!isLowerCase(email)) {
     errorMessage.style.display = 'block';
