@@ -440,7 +440,7 @@ label {
 }
 
 .popup-btn-container {
-  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .popup-btn {
@@ -481,6 +481,13 @@ label {
   border-radius: 5px;
   padding: 5px 15px;
   display: none;
+}
+
+.btn-list-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -635,12 +642,6 @@ label {
     letter-spacing: 0;
     text-align: left;
     height: 82px;
-  }
-
-  .popup-btn-container {
-    position: absolute;
-    left: 66%;
-    top: 67%;
   }
 
   .popup-close-btn {
